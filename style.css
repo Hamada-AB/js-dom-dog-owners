@@ -45,9 +45,11 @@ img {
   column-gap: 10px;
 
   padding: 1rem;
+  padding-left: 6.3rem;
 
   list-style-type: none;
-  overflow-y: auto;
+  overflow-x: auto;
+  scrollbar-width: thin;
 }
 
 .main {
@@ -71,8 +73,33 @@ img {
   display: grid;
 }
 
-/* Components */
+.btns {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 1.3rem;
+}
 
+.add {
+  all: unset;
+  width: 80px;
+  height: 70px;
+
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 300ms;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  background-color: var(--blue);
+}
+/* Components */
 .dogs-list__button {
   display: grid;
   place-content: center;
